@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Security-conscious basic settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta
+        name="description"
+        content="Pankaja Motobay - Professional vehicle repair services for bikes, three-wheelers and cars.">
+    <title>Pankaja Motobay</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font Awesome icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+<!-- ================= HEADER ================= -->
+<header class="header">
+    <div class="container nav-container">
+        <a href="#home" class="logo-area">
+            <img src="./Logo.jpg" alt="Pankaja Motobay Logo">
+            <div>
+                <span class="logo-name">PANKAJA</span>
+                <span class="logo-sub">MOTOBAY</span>
+            </div>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav id="navbar">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#location">Location</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section id="home" class="home-hero">
+    <!-- LEFT SIDE -->
+    <div class="home-content">
+        <div class="hero-small-title">
+            WELCOME TO
+        </div>
+        <h1>
+            PANKAJA
+            <span>MOTOBAY</span>
+        </h1>
+
+        <h2>
+            Vehicle
+            <br>
+            Repair Specialists
+        </h2>
+
+        <p>
+            Professional Repairs • Quality Service • Reliable Care
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#booking" class="hero-btn gold-btn">
+                🔧 Book a Repair
+            </a>
+
+            <a href="#services" class="hero-btn outline-btn">
+                Our Services
+            </a>
+        </div>
+    </div>
+
+
+    <!-- RIGHT SIDE IMAGE SLIDESHOW -->
+    <div class="home-image-area">
+        <div class="home-image-slide active">
+            <img src="./Image.webp" alt="Bike Repair">
+        </div>
+
+        <div class="home-image-slide">
+            <img src="./Wheels.jpeg" alt="Bike Service">
+        </div>
+
+        <div class="home-image-slide">
+            <img src="./Car 1.jpg" alt="Car Repair">
+        </div>
+
+       
+        <!-- Image arrows -->
+        <button
+            class="image-arrow image-prev"
+            id="imagePrev">
+            ❮
+        </button>
+
+        <button
+            class="image-arrow image-next"
+            id="imageNext">
+            ❯
+        </button>
+
+        <!-- Dots -->
+        <div class="image-dots">
+            <button
+                class="image-dot active"
+                data-slide="0">
+            </button>
+
+            <button
+                class="image-dot"
+                data-slide="1">
+            </button>
+
+            <button
+                class="image-dot"
+                data-slide="2">
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- ================= QUICK ACTIONS ================= -->
+<section class="quick-actions">
+    <div class="container quick-grid">
+        <a href="#booking">
+            <i class="fas fa-calendar-check"></i>
+            <span>Book Service</span>
+        </a>
+
+        <a href="#services">
+            <i class="fas fa-wrench"></i>
+            <span>Our Services</span>
+        </a>
+
+        <a href="#gallery">
+            <i class="fas fa-images"></i>
+            <span>Our Work</span>
+        </a>
+
+        <a href="#" data-whatsapp aria-label="Open Pankaja Motobay WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </a>
+    </div>
+</section>
+
+<section class="section dark-section" id="services">
+    <div class="container">
+
+        <div class="section-heading">
+            <span>WHAT WE DO</span>
+            <h2>Our Services</h2>
+            <p>Professional vehicle services you can trust.</p>
+        </div>
+
+        <div class="service-list">
+            <details class="service-item">
+                <summary>Engine Service
+                    <span>+</span>
+                </summary>
+
+                <div class="sub-services">
+                    <details class="sub-service">
+                        <summary>
+                            Engine head repairing 
+                            <span>+</span>
+                        </summary>
+                        <div class="inner-services">
+                            <a href="#">Head valve guiding</a>
+                            <a href="#">Head valve seating </a>
+                            <a href="#">Bearing replacement</a>
+                            <a href="#">Rocker arm replacement and tappet adjustment</a>
+                        </div>
+                    </details>
+
+                    <details class="sub-service">
+                        <summary>
+                            Engine block ( boring block)
+                            <span>+</span>
+                        </summary>
+                        <div class="inner-services">
+                            <a href="#">Piston replacement</a>
+                            <a href="#">Engine block checking and boring</a>
+                            <a href="#">Compressor checking</a>
+                        </div>
+                    </details>
+
+                    <details class="sub-service">
+                        <summary>
+                            Clutch system checking and replacement
+                            <span>+</span>
+                        </summary>
+                        <div class="inner-services">
+                            <a href="#">Clutch Plate</a>
+                            <a href="#">Pressure Plate</a>
+                            <a href="#">Clutch Hub</a>
+                            <a href="#">Clutch Bell</a>
+                            <a href="#">Clutch Tension Spring</a>
+                        </div>
+                    </details>
+
+                    <details class="sub-service">
+                        <summary>
+                            Gear box checking
+                            <span>+</span>
+                        </summary>
+                        <div class="inner-services">
+                            <a href="#">Gearwheel replacement</a>
+                            <a href="#">Gear shaft replacement</a>
+                            <a href="#">Gear pattle replacement</a>
+                        </div>
+                    </details>
+
+                     <details class="sub-service">
+                        <summary>
+                            Oil Mechanic system checking
+                            <span>+</span>
+                        </summary>
+                        <div class="inner-services">
+                            <a href="#">Oil pump replacement</a>
+                            <a href="#">Oil Seal replacement</a>
+                            <a href="#">Oil Filter replacement</a>
+                        </div>
+                    </details>
+                </div>
+            </details>
+
+
+            <details class="service-item">
+                <summary>
+                    Chasi 
+                    <span>+</span>
+                </summary>
+                        <div class="inner-services">
+                            <a href="#">Brake system full repairing</a>
+                            <a href="#">Cupset adjustment and replacement</a>
+                            <a href="#">Chain adjustment replacement</a>
+                            <a href="#">Wheel bear in and swin arm bearing replacement</a>
+                            <a href="#">Suspension/socket sober repairing and replacement</a>
+                            <a href="#">Cables replacement</a>
+                            <a href="#">Housing repairing and replacement</a>
+                        </div>
+            </details>
+
+            <div class="service-list">
+            <details class="service-item">
+                <summary>Electrical
+                    <span>+</span>
+                </summary>
+            </details>
+            </div>
+            
+            <div class="service-list">
+                <details class="service-item">
+                    <summary>
+                        Carburator & EFI
+                        <span>+</span>
+                    </summary>
+                        <div class="inner-services">
+                            <a href="#">Diaphragm checking and replacement </a>
+                            <a href="#">Choke system checking and replacement </a>
+                            <a href="#">Carburetor petrol line cleaning</a>
+                            <a href="#">Rocker arm replacement and tappet adjustment</a>
+                            <a href="#">Slow Jat checking and replacement </a>
+                            <a href="#">Carburator tuning</a>
+                        </div>
+                </details>
+
+                <div class="service-list">
+                <details class="service-item">
+                        <summary>
+                            EFi
+                            <span>+</span>
+                        </summary>
+                        <div class="inner-services">
+                            <a href="#">EFi sensor cleaning and checking and replacement  </a>
+                            <a href="#">Throttle body repair in and replacement </a>
+                            <a href="#">EFI tuning</a>
+                        </div>
+                </details>
+                    
+
+            <details class="service-item">
+                <summary>
+                    Other Services
+                    <span>+</span>
+                </summary>
+                <div class="inner-services">
+                    <a href="#">Vehicle Inspection</a>
+                    <a href="#">Troubleshooting</a>
+                    <a href="#">Vehicle Diagnosis</a>
+                    <a href="#">Emergency Repair</a>
+                    <a href="#">Mobile Services (***Conditions Apply***)</a>
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery" class="section dark-section">
+    <div class="container">
+        <div class="section-heading">
+            <h2>📸 Repair Gallery</h2>
+            <p>
+                Real repair work from Pankaja Motobay.
+            </p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="./Bike 1.jpg" alt="Bike repair">
+            </div>
+
+            <div class="gallery-item">
+                <img src="./Bike 2.jpg" alt="Motorcycle service">
+            </div>
+
+            <div class="gallery-item">
+                <img src="./Bike 3.jpg" alt="Motorcycle service">
+            </div>
+
+            <div class="gallery-item">
+                <img src="./Bike 4.jpg" alt="Motorcycle service">
+            </div>
+
+            <div class="gallery-item">
+                <img src="./Three wheel 1.jpg" alt="Three-wheeler repair">
+            </div>
+
+            <div class="gallery-item">
+                <img src="./Three wheel 2.jpg" alt="Three-wheeler service">
+            </div>
+
+            <div class="gallery-item">
+                <img src="./Three wheel 3.jpg" alt="Three-wheeler repair">
+            </div>
+
+            <div class="gallery-item">
+                <img src="./Three Wheel 4.jpg" alt="Three-wheeler repair">
+            </div>
+
+            <div class="gallery-item">
+                <img src="./Car 1.jpg" alt="Car repair">
+            </div>
+
+            <div class="gallery-item">
+                <img src="./Car 2.jpg" alt="Car service">
+            </div>
+
+            <div class="gallery-item">
+                <img src="./Car 3.jpg" alt="Car repair">
+            </div>
+
+            <div class="gallery-item">
+                <img src="./Car 4.jpg" alt="Car repair">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= WHY US ================= -->
+
+<section class="why-section">
+
+    <div class="container">
+        <div class="section-heading">
+            <h2>Why Choose Pankaja Motobay?</h2>
+        </div>
+
+        <div class="why-grid">
+            <div>
+                <i class="fas fa-user-gear"></i>
+                <h3>Skilled Repair</h3>
+                <p>Professional repair solutions for Vehicles.</p>
+            </div>
+
+            <div>
+                <i class="fas fa-shield-halved"></i>
+                <h3>Quality Service</h3>
+                <p>Careful inspection and quality-focused workmanship.</p>
+            </div>
+
+            <div>
+                <i class="fas fa-clock"></i>
+                <h3>Efficient Service</h3>
+                <p>We aim to complete repairs efficiently.</p>
+            </div>
+
+            <div>
+                <i class="fas fa-heart"></i>
+                <h3>Customer Care</h3>
+                <p>Your vehicle is treated with care.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- APPROVED CUSTOMER REVIEWS -->
+        <div class="approved-reviews-box">
+            <div class="review-form-title">
+                <span>REAL CUSTOMER FEEDBACK</span>
+                <h3>Customer Reviews</h3>
+                <p>Reviews are displayed after admin approval.</p>
+            </div>
+            <div id="reviewList" class="review-list">
+                <div class="empty-reviews">
+                    <p>Loading customer reviews...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- WRITE REVIEW -->
+        <div class="review-form-box">
+            <div class="review-form-title">
+                <span>YOUR EXPERIENCE MATTERS</span>
+                <h3>
+                    ⭐ Share Your Experience
+                </h3>
+                <p>
+                    Had your vehicle repaired
+                    by us? Tell us about your experience.
+                </p>
+            </div>
+
+            <form id="reviewForm">
+                <div class="review-form-grid">
+                    <!-- NAME -->
+                    <div class="form-group">
+                        <label>
+                            Your Name *
+                        </label>
+                        <input
+                            type="text"
+                            id="reviewName"
+                            maxlength="60"
+                            placeholder="Enter your name"
+                            required
+                        >
+                    </div>
+
+                    <!-- VEHICLE -->
+                    <div class="form-group">
+                        <label>
+                            Vehicle Type *
+                        </label>
+                        <select
+                            id="reviewVehicle"
+                            required
+                        >
+                            <option value="">
+                                Select vehicle
+                            </option>
+
+                            <option value="Bike">
+                                🏍️ Bike
+                            </option>
+
+                            <option value="Three-Wheeler">
+                                🛺 Three-Wheeler
+                            </option>
+
+                            <option value="Car">
+                                🚗 Car
+                            </option>
+                        </select>
+                    </div>
+
+                    <!-- SERVICE -->
+                    <div class="form-group">
+                        <label>
+                            Service Received *
+                        </label>
+
+                        <select
+                            id="reviewService"
+                            required
+                        >
+                            <option value="">
+                                Select service
+                            </option>
+
+                            <option>
+                                Engine Repair
+                            </option>
+
+                            <option>
+                                Full Service
+                            </option>
+
+                            <option>
+                                Oil Change
+                            </option>
+
+                            <option>
+                                Brake Repair
+                            </option>
+
+                            <option>
+                                Clutch Repair
+                            </option>
+
+                            <option>
+                                Electrical Repair
+                            </option>
+
+                            <option>
+                                Battery Service
+                            </option>
+
+                            <option>
+                                General Repair
+                            </option>
+
+                            <option>
+                                Other
+                            </option>
+                        </select>
+                    </div>
+
+                    <!-- RATING -->
+                    <div class="star-rating" id="starRating">
+    <input type="radio" id="star5" name="rating" value="5">
+    <label for="star5">★</label>
+
+    <input type="radio" id="star4" name="rating" value="4">
+    <label for="star4">★</label>
+
+    <input type="radio" id="star3" name="rating" value="3">
+    <label for="star3">★</label>
+
+    <input type="radio" id="star2" name="rating" value="2">
+    <label for="star2">★</label>
+
+    <input type="radio" id="star1" name="rating" value="1">
+    <label for="star1">★</label>
+</div>
+
+<input type="hidden" id="reviewRating" value="0">
+                    </div>
+
+                    <!-- REVIEW -->
+                    <div class="form-group review-full">
+                        <label>
+                            Your Review *
+                        </label>
+
+                        <textarea
+                            id="reviewMessage"
+                            maxlength="500"
+                            placeholder="Tell us about your service experience..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <!-- SUBMIT -->
+                    <button
+                        type="submit"
+                        class="gold-btn review-submit"
+                    >
+
+                        ⭐ Submit Review
+                    </button>
+                </div>
+            </form>
+
+            <p
+                id="reviewStatus"
+                class="review-status"
+            ></p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= BOOKING ================= -->
+
+<section id="booking" class="booking-section">
+    <div class="container">
+        <div class="section-heading">
+            <span>ONLINE BOOKING</span>
+            <h2>🔧 Book Your Repair</h2>
+            <p>
+                Send your repair request directly through WhatsApp.
+            </p>
+        </div>
+
+        <form id="bookingForm" class="booking-form">
+            <div class="form-group">
+                <label>Your Name</label>
+                <input
+                    type="text"
+                    id="customerName"
+                    maxlength="60"
+                    required
+                    autocomplete="name"
+                >
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    maxlength="20"
+                    required
+                    autocomplete="tel"
+                >
+            </div>
+
+            <div class="form-group">
+                <label>Vehicle Type</label>
+                <select id="vehicleType" required>
+                    <option value="">Select Vehicle</option>
+                    <option value="Bike">🏍️ Bike</option>
+                    <option value="Three-Wheeler">🛺 Three-Wheeler</option>
+                    <option value="Car">🚗 Car</option>
+                    <option value="other">other </option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Vehicle Model</label>
+                <input
+                    type="text"
+                    id="vehicleModel"
+                    maxlength="60"
+                    placeholder="Example: Bajaj Pulsar"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label>Required Service</label>
+                <select id="service" required>
+                    <option value="">Select Service</option>
+                    <option>Engine Repair</option>
+                    <option>Full Service</option>
+                    <option>Oil Change</option>
+                    <option>Brake Repair</option>
+                    <option>Clutch Repair</option>
+                    <option>Electrical Repair</option>
+                    <option>Battery Service</option>
+                    <option>Starting Problem</option>
+                    <option>General Repair</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Preferred Date</label>
+                <input
+                    type="date"
+                    id="date"
+                    required
+                >
+            </div>
+
+            <div class="form-group full">
+                <label>Describe the Problem</label>
+                <textarea
+                    id="problem"
+                    rows="5"
+                    maxlength="500"
+                    placeholder="Tell us briefly about the problem..."
+                ></textarea>
+            </div>
+
+            <button type="submit" class="gold-btn submit-btn">
+                <i class="fab fa-whatsapp"></i>
+                Send Booking via WhatsApp
+            </button>
+                <div class="appointment-contact">
+
+    <p>Need help with your booking?</p>
+
+    <div class="contact-actions">
+
+        <a href="tel:+94711294908"
+           class="contact-btn call-btn">
+            <i class="fas fa-phone"></i>
+            Call Us
+        </a>
+
+        <a href="https://wa.me/94711294908"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="contact-btn whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+            WhatsApp Us
+        </a>
+
+    </div>
+
+</div>
+        </form>
+    </div>
+</section>
+
+<!-- ================= LOCATION ================= -->
+<section id="location" class="section dark-section">
+    <div class="container">
+
+        <div class="section-heading">
+            <span>VISIT US</span>
+            <h2>📍 Find Pankaja Motobay</h2>
+        </div>
+
+        <div class="location-box">
+
+            <div class="location-info">
+
+                <i class="fas fa-location-dot"></i>
+
+                <h3>Our Workshop</h3>
+
+                <p>
+                    Pankaja Motobay
+                </p>
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Pankaja+Moto+Bay"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="outline-btn"
+                >
+                    <i class="fas fa-map-marker-alt"></i>
+                    Open Google Maps
+                </a>
+            </div>
+
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.5453466699546!2d79.93404260000001!3d6.9448102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae257005809d8d1%3A0x42612e07bad0d0b7!2sPankaja%20moto%20bay!5e0!3m2!1sen!2slk!4v1789900098887!5m2!1sen!2slk" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact-section">
+    <div class="container contact-content">
+
+        <div>
+            <span>CONTACT</span>
+
+            <h2>Ready to Repair Your Ride?</h2>
+
+            <p>
+                Contact Pankaja Motobay for vehicle repair services.
+            </p>
+        </div>
+
+        <div class="contact-actions">
+
+    <a href="tel:+94711294908"
+       class="contact-btn call-btn">
+        <i class="fas fa-phone"></i>
+        Call Us
+    </a>
+
+    <a href="https://wa.me/94711294908"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="contact-btn whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+        WhatsApp
+    </a>
+
+</div>
+
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <div class="container footer-content">
+        <div class="footer-logo">
+            <img src="./Logo.jpg" alt="Pankaja Motobay">
+            <h3>PANKAJA MOTOBAY</h3>
+            <p>
+                Vehicle Repair Specialists
+            </p>
+        </div>
+
+        <div class="footer-social">
+            <a href="#" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="#" aria-label="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+
+            <a href="#" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="copyright">
+        © <span id="year"></span> Pankaja Motobay.
+        All Rights Reserved.
+    </div>
+</footer>
+
+<!-- ================= FLOATING WHATSAPP ================= -->
+<a
+    href="#"
+    id="floatingWhatsApp"
+    data-whatsapp
+    class="floating-whatsapp"
+    aria-label="Contact Pankaja Motobay on WhatsApp"
+>
+    <i class="fab fa-whatsapp"></i>
+    <span>WhatsApp</span>
+</a>
+
+<script src="./script.js"></script>
+</body>
+</html>

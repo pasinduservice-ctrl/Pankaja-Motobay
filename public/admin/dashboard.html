@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pankaja Motobay Admin Dashboard</title>
+    <link rel="stylesheet" href="./admin.css">
+</head>
+<body>
+<div class="wrap">
+    <header class="top">
+        <div>
+            <h1>Pankaja Motobay</h1>
+            <p>Admin Dashboard</p>
+        </div>
+        <div class="profile-actions">
+            <div class="admin-profile">
+                <strong id="adminName">Admin</strong>
+                <small id="adminEmail"></small>
+            </div>
+            <button id="logoutBtn" type="button" class="dark-btn">Logout</button>
+        </div>
+    </header>
+
+    <section class="stats" aria-label="Website statistics">
+        <div><small>Website Visits</small><strong id="visits">0</strong></div>
+        <div><small>Tracked Clicks</small><strong id="clicks">0</strong></div>
+        <div><small>Appointments</small><strong id="appointments">0</strong></div>
+        <div><small>Completed</small><strong id="completed">0</strong></div>
+        <div><small>Messages</small><strong id="messages">0</strong></div>
+        <div><small>Pending Reviews</small><strong id="pendingReviews">0</strong></div>
+        <div><small>Approved Reviews</small><strong id="approvedReviews">0</strong></div>
+        <div><small>Average Rating</small><strong id="rating">0</strong></div>
+    </section>
+
+    <section class="panel">
+        <div class="panel-heading">
+            <div>
+                <h2>Customer Reviews</h2>
+                <p>Approve or reject reviews before they appear on the website.</p>
+            </div>
+            <button id="refreshBtn" type="button">Refresh</button>
+        </div>
+        <div id="reviews" class="admin-reviews">
+            <p>Loading reviews...</p>
+        </div>
+    </section>
+
+    <section class="panel">
+        <div class="panel-heading">
+            <div>
+                <h2>Appointments</h2>
+                <p>Manage customer booking requests.</p>
+            </div>
+        </div>
+        <div class="tableWrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Customer</th>
+                        <th>Phone</th>
+                        <th>Vehicle</th>
+                        <th>Service</th>
+                        <th>Date</th>
+                        <th>Problem</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="appointmentsTable">
+                    <tr><td colspan="7">Loading appointments...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="panel">
+        <div class="panel-heading">
+            <div>
+                <h2>Customer Messages</h2>
+                <p>Messages submitted through the website.</p>
+            </div>
+        </div>
+        <div class="tableWrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Message</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="messagesTable">
+                    <tr><td colspan="5">Loading messages...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div>
+<script src="./dashboard.js"></script>
+</body>
+</html>
