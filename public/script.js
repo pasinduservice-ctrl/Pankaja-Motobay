@@ -95,8 +95,14 @@ if (bookingForm) {
                 })
             });
 
-            if (!response.ok) throw new Error("Booking could not be saved.");
+            const data = await response.json().catch(() => ({}));
+            if (!response.ok) {
+                throw new Error(data.error || "Booking could not be saved.");
+            }
 
+            alert("Your appointment request was saved successfully. WhatsApp will open next.");
+            bookingForm.reset();
+            if (dateInput) dateInput.min = new Date().toISOString().split("T")[0];
             openWhatsApp(decodeURIComponent(message));
         } catch (error) {
             alert("Booking could not be submitted. Please try WhatsApp directly.");
@@ -113,9 +119,21 @@ const ratingInput = document.getElementById("reviewRating");
 const starRating = document.getElementById("starRating");
 
 if (starRating && ratingInput) {
-    starRating.querySelectorAll("input[name='rating']").forEach(star => {
+    const ratingStars = starRating.querySelectorAll("input[name='rating']");
+
+    ratingStars.forEach(star => {
         star.addEventListener("change", () => {
             ratingInput.value = star.value;
+        });
+    });
+
+    starRating.querySelectorAll("label[for]").forEach(label => {
+        label.addEventListener("click", () => {
+            const star = document.getElementById(label.htmlFor);
+            if (star) {
+                star.checked = true;
+                ratingInput.value = star.value;
+            }
         });
     });
 }
@@ -151,6 +169,9 @@ if (reviewForm) {
             reviewStatus.textContent = data.message;
             reviewForm.reset();
             if (ratingInput) ratingInput.value = "0";
+            starRating?.querySelectorAll("input[name='rating']").forEach(star => {
+                star.checked = false;
+            });
         } catch (error) {
             reviewStatus.textContent = error.message;
         }
@@ -189,7 +210,10 @@ async function loadApprovedReviews() {
             </article>
         `).join("");
     } catch (error) {
-        reviewList.innerHTML = "";
+        reviewList.innerHTML = `
+            <div class="empty-reviews">
+                <p>Reviews are temporarily unavailable. Please try again later.</p>
+            </div>`;
         console.error(error);
     }
 }

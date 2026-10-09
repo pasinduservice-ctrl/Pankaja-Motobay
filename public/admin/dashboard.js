@@ -10,17 +10,20 @@ function escapeHtml(value) {
 }
 
 async function api(url, options = {}) {
-    const response = await fetch(url, options);
+    const response = await fetch(url, {
+        credentials: "same-origin",
+        ...options
+    });
 
     if (response.status === 401) {
-        window.location.href = "login.html";
+        window.location.replace("/admin/login.html");
         throw new Error("Unauthorized");
     }
 
-    const data = await response.json();
+    const data = await response.json().catch(() => ({}));
 
     if (!response.ok) {
-        throw new Error(data.error || "Request failed");
+        throw new Error(data.error || `Request failed (${response.status})`);
     }
 
     return data;

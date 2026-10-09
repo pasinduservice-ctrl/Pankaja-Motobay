@@ -11,3 +11,8 @@
   from = "/admin"
   to = "/admin/login.html"
   status = 301
+
+[[redirects]]
+  from = "/admin/"
+  to = "/admin/login.html"
+  status = 301
